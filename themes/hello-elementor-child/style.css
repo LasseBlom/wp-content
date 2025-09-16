@@ -1,0 +1,48 @@
+/*
+Theme Name: Hello Elementor Child
+Theme URI: https://elementor.com/hello-theme/?utm_source=wp-themes&utm_campaign=theme-uri&utm_medium=wp-dash
+Template: hello-elementor
+Author: Lasse Blom Nielsen
+Author URI: https://elementor.com/?utm_source=wp-themes&utm_campaign=author-uri&utm_medium=wp-dash
+Tags: accessibility-ready,flexible-header,custom-colors,custom-menu,custom-logo,featured-images,rtl-language-support,threaded-comments,translation-ready
+Version: 1.0.0
+Updated: 2025-09-14 18:05:14
+
+*/
+
+/* Ændre farven på menuen i toppen på projektsiden til sort - før var den rød.  */
+
+body a{
+    color: black !important;
+}
+
+/* Da der er brugt forskellige templates til at opbygge mine sider, sikre jeg mig her at alle fonte er de samme. */
+
+main{
+    font-family: "Poppins", Sans-serif !important;
+}
+
+/* Inde på "om mig" siden var der en "text-transform: capitalize" på H1 teksten, hvilket jeg har ændret til "uppercase" for at gøre alle bogstaverne store. */
+
+.elementor-103 .elementor-element.elementor-element-36c6bb3f .elementor-heading-title {
+    font-family: "Poppins", Sans-serif !important;
+    text-transform: uppercase !important;
+}
+
+/* Her ændre jeg farven på en CTA på forsiden, fra sort til hvid.  */
+
+.elementor-41 .elementor-element.elementor-element-239d4cf .elementor-button {
+    background-color: rgb(255, 255, 255) !important;
+}
+
+/* Her ændre jeg farven på en teskt på en CTA på forsiden.  */
+
+.elementor-button span {
+    color: rgb(0, 0, 0) !important;
+}
+
+/* Her gir jeg en margin på projektsiden, så mine projekter ikke ligger "lige" op og ned af hinanden.  */
+
+article {
+    margin: 10px !important;
+}
